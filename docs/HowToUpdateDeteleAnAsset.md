@@ -3,7 +3,7 @@
 **Precondition**:
 
 * To be able to update/delete an asset to the Organicity Experimenter Site (OC-Exp. Site), you need the **experimenter** role. This will be assigned to you by the Organicity team.
-* You should know [how to push an Asset to the Organicity Platform](HowToPushAnAsset.md).
+* You should know [how to push an Asset to the Organicity Platform](/HowToPushAnAsset).
 
 ## Update an asset
 
@@ -32,7 +32,7 @@ Important for the update is, that the *same Asset ID* is used as during the crea
 
 ### HTTP body
 
-The HTTP body is an asset in JSON format [as described here](AssetDataModel.md). To update an asset, you're not allowed to use the JSON attributes
+The HTTP body is an asset in JSON format [as described here](/AssetDataModel). To update an asset, you're not allowed to use the JSON attributes
 `id` and `type`.
 
 A simple valid asset for an update could be:
@@ -67,7 +67,7 @@ X-Organicity-Experiment: 57e127c010590cb31ca82aa4
 }
 ```
 
-If the asset was created before, you get a `404 Not Found` which tells you, that the asset does not exixts. Please make sure, that you [pushed the Asset to the Organicity Platform](HowToPushAnAsset.md).
+If the asset was created before, you get a `404 Not Found` which tells you, that the asset does not exixts. Please make sure, that you [pushed the Asset to the Organicity Platform](/HowToPushAnAsset).
 
 If the asset was created before, and everything else is correct, e.g, HTTP headers, asset format, etc., then the response is a `204 No Content`, which tells you that asset was updated:
 
@@ -115,6 +115,7 @@ Content-Length: 0
 Content-Type: text/html; charset=utf-8
 Date: Tue, 20 Sep 2016 12:37:07 GMT
 ...
+``
 
 ## Update/Delete as an Participant
 

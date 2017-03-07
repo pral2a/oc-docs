@@ -10,7 +10,7 @@
 * The Experimenter Portal provides you a `client_id` and a `client_secret`, both is needed in this tutorial.
 * Additionally, you're experiment needs the role `offline_access` to get Refresh Tokens. This will be assigned to your experiment by the Organicity team.
 
-Authentication in Organicity is activity-centere: Users acquire [Access Tokens](HowToAccessToken.md) to perform an action with them in the next minutes. Access Tokens invalidate after 5 minutes, and have to be renewed with Refresh Tokens.
+Authentication in Organicity is activity-centere: Users acquire [Access Tokens](/HowToAccessToken) to perform an action with them in the next minutes. Access Tokens invalidate after 5 minutes, and have to be renewed with Refresh Tokens.
 
 While this is good for security, it is unusable for long-term applications that run without supervision, like environmentally deployed sensor nodes.
 As these nodes still need to contact Organicity, for example to post measured data, they need a way to authenticate. This is facilitated by Refresh Tokens.
@@ -23,7 +23,7 @@ To acquire Refresh Tokens, you just need to append the additional query paramete
 
 ### Authorization Code Grant
 
-The flow is the same as [described here](HowToAuthenticateAnUser.md), just with the additional query parameter `scope=offline_access`.
+The flow is the same as [described here](/HowToAuthenticateAnUser), just with the additional query parameter `scope=offline_access`.
 
 The full authorization URL looks as follows:
 
@@ -84,7 +84,7 @@ If successful, the server returns a JSON record as described above.
 ## Please note
 
 * Refresh Tokens are valid indefinitely, thus Refresh Tokens will remain valid from call to call, so each renewal can be performed with **the same initial Refresh Token**! This means, there is no reason to store the refresh Token from the response. Thus, Offline-Tokens can be used by embedded devices like IoT devices.
-* [This is normal **Access Token**, which can be used a Bearer Token for all Organicity APIs](HowToAccessToken.md)
+* [This is normal **Access Token**, which can be used a Bearer Token for all Organicity APIs](/HowToAccessToken)
 * The **Access Token is valid for 5 Minutes**, thus a refresh is needed after 5 minutes.
 * An Access Token needs to be refreshed at least **every 30 days**, as otherwise the Refresh Token will invalidate, and a new Refresh Token needs to be generated.
 

@@ -137,7 +137,7 @@ An example:
 }
 ```
 
-[See here for further details on the Access Tokens](HowToAccessToken.md).
+[See here for further details on the Access Tokens](/HowToAccessToken).
 
 ### Implicit Grant
 
@@ -189,7 +189,7 @@ An example:
 }
 ```
 
-[See here for further details on the Access Tokens](HowToAccessToken.md).
+[See here for further details on the Access Tokens](/HowToAccessToken).
 
 ### Client Credential Grant
 
@@ -226,7 +226,7 @@ An example:
 }
 ```
 
-[See here for further details on the Access Tokens](HowToAccessToken.md).
+[See here for further details on the Access Tokens](/HowToAccessToken).
 
 ## Libraries
 

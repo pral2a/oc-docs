@@ -36,7 +36,7 @@ Accept: application/json
 <Asset in JSON>
 ```
 
-Here, you must use an [Access Token](HowToAuthenticateAnUser.md) which is [issued for you](HowToAuthenticateAnUser.md).
+Here, you must use an [Access Token](/HowToAuthenticateAnUser) which is [issued for you](/HowToAuthenticateAnUser).
 
 For the above IDs it looks like this:
 
@@ -54,7 +54,7 @@ X-Organicity-Experiment: 57e127c010590cb31ca82aa4
 
 ### HTTP body
 
-The HTTP body is an asset in JSON format [as described here](AssetDataModel.md). Important for the creation is the correct Asset ID. An Asset ID has the form:
+The HTTP body is an asset in JSON format [as described here](/AssetDataModel). Important for the creation is the correct Asset ID. An Asset ID has the form:
 
 ```json
 urn:oc:entity:experimenters:<ExperimenterId>:<ExperimentId>:<AssetId>
@@ -136,7 +136,7 @@ the `participant` role will be assigned. The pushing itself works as abobe.
 
 ## Delete and update assets
 
-See How to [Delete or Update an asset](HowToUpdateDeteleAnAsset.md).
+See How to [Delete or Update an asset](/HowToUpdateDeteleAnAsset).
 
 ## Demo
 

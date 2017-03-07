@@ -76,7 +76,7 @@ To verirfy the token, you need the public certificate, which is [available here]
 ## Organicity APIs
 
 These **Access Tokens** can be used as Bearer Token to call different [Organicity APIs](https://organicityeu.github.io/api/), e.g., to
-[push an Assets to the Organicity Experimenter Site](HowToPushAnAsset.md). An HTTP header example:
+[push an Assets to the Organicity Experimenter Site](/HowToPushAnAsset). An HTTP header example:
 
 ```shell
 Authorization: Bearer <ACCCESS_TOKEN>

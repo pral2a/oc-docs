@@ -4,7 +4,7 @@ This is just an overview of how to CRUD assets.
 
 ## CREATE (HTTP POST)
 
-To [create an asset](HowToPushAnAsset.md), you must do an HTTP **POST** to the OC-Exp. Site:
+To [create an asset](/HowToPushAnAsset), you must do an HTTP **POST** to the OC-Exp. Site:
 
 ```shell
 POST https://exp.orion.organicity.eu/v2/entities
@@ -49,7 +49,7 @@ GET http://discovery.organicity.eu/v0/assets/urn:oc:entity:experimenters:<MainEx
 
 ## UPDATE (HTTP UPDATE)
 
-To [update an asset](HowToUpdateDeteleAnAsset.md#update-an-asset), you must do an HTTP **POST** to the OC-Exp. Site.
+To [update an asset](/HowToUpdateDeteleAnAsset#update-an-asset), you must do an HTTP **POST** to the OC-Exp. Site.
 JSON attributes `id` and `type` are not allowed! Be aware of the `/attrs` in the URL:
 
 ```shell
@@ -81,7 +81,7 @@ Date: Tue, 20 Sep 2016 12:37:07 GMT
 
 ## DELETE (HTTP DELETE)
 
-To [delete an asset](HowToUpdateDeteleAnAsset.md#delete-an-asset), you must do an HTTP **DELETE** to the OC-Exp. Site:
+To [delete an asset](/HowToUpdateDeteleAnAsset#delete-an-asset), you must do an HTTP **DELETE** to the OC-Exp. Site:
 
 ```shell
 DELETE  https://exp.orion.organicity.eu/v2/entities/urn:oc:entity:experimenters:<MainExperimenterId>:<ExperimentId>:<AssetId>

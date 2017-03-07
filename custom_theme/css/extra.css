@@ -1,18 +1,15 @@
 @charset "UTF-8";
 @font-face {
     font-family: CooperHewitt-Book;
-    src: url(fonts/CooperHewitt-Book.eot);
-    src: url(fonts/CooperHewitt-Book.eot?#iefix) format("embedded-opentype"), url(fonts/CooperHewitt-Book.woff) format("woff"), url(fonts/CooperHewitt-Book.ttf) format("truetype"), url(fonts/CooperHewitt-Book.svg#svgFontName) format("svg")
+    src: url(fonts/CooperHewitt-Book.woff) format("woff");
 }
 @font-face {
     font-family: CooperHewitt-Light;
-    src: url(fonts/CooperHewitt-Light.eot);
-    src: url(fonts/CooperHewitt-Light.eot?#iefix) format("embedded-opentype"), url(fonts/CooperHewitt-Light.woff) format("woff"), url(fonts/CooperHewitt-Light.ttf) format("truetype"), url(fonts/CooperHewitt-Light.svg#svgFontName) format("svg")
+    src: url(fonts/CooperHewitt-Light.woff) format("woff");
 }
 @font-face {
     font-family: CooperHewitt-Medium;
-    src: url(fonts/CooperHewitt-Medium.eot);
-    src: url(fonts/CooperHewitt-Medium.eot?#iefix) format("embedded-opentype"), url(fonts/CooperHewitt-Medium.woff) format("woff"), url(fonts/CooperHewitt-Medium.ttf) format("truetype"), url(fonts/CooperHewitt-Medium.svg#svgFontName) format("svg")
+    src: url(fonts/CooperHewitt-Medium.woff) format("woff");
 }
 
 h1,
@@ -21,6 +18,7 @@ h3,
 h4,
 h5,
 h6,
+strong,
 .h1,
 .h2,
 .h3,
@@ -32,8 +30,14 @@ h6,
     line-height: 1.1;
     color: #EF4070
 }
+strong
+{
+    font-family: "CooperHewitt-Medium", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #555;
+}
 body {
-    font-family: "CooperHewitt-Light", Helvetica, Arial, sans-serif;
+    font-family: "CooperHewitt-Book", Helvetica, Arial, sans-serif;
     font-weight: 500;
     background-image: none;
 }
@@ -1153,10 +1157,10 @@ output {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: #CD0037;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);*/
+    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)*/
 }
 .form-control:-moz-placeholder {
     color: #999
@@ -1533,8 +1537,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #1990d5;
-    border-color: #1684c2
+    background-color: #EF4070;
+    border-color: #EF4070
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -1688,8 +1692,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
     color: #fff;
-    background-color: #033c73;
-    border-color: #033c73
+    background-color: #EF4070;
+    border-color: #EF4070
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -1720,11 +1724,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-    background-color: #033c73;
-    border-color: #033c73
+    background-color: #EF4070;
+    border-color: #EF4070
 }
 .btn-info .badge {
-    color: #033c73;
+    color: #EF4070;
     background-color: #fff
 }
 .btn-link {
@@ -1749,7 +1753,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-    color: #157ab5;
+    color: #CD0037;
     text-decoration: underline;
     background-color: transparent
 }
@@ -3399,9 +3403,15 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-brand {
     float: left;
-    padding: 15px 15px;
+    padding: 2px;
     font-size: 18px;
-    line-height: 20px
+    line-height: 20px;
+    margin-right: 20px;
+}
+.navbar-brand img {
+    height: 40px;
+    position: relative;
+    margin: 0 15px 0 0;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -3672,7 +3682,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     color: #fff
 }
 .navbar-inverse {
-    background-color: #033c73;
+    background-color: #CD0037;
     border-color: #CD0037
 }
 .navbar-inverse .navbar-brand {
@@ -3718,7 +3728,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-    border-color: #022a50
+    border-color: #CD0037
 }
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
@@ -4602,8 +4612,8 @@ a.list-group-item.active:focus .list-group-item-text {
     border-color: #ddd
 }
 .panel-info>.panel-heading {
-    color: #3a87ad;
-    background-color: #033c73;
+    color: #F3658B;
+    background-color: #EB1B53;
     border-color: #ddd
 }
 .panel-info>.panel-heading+.panel-collapse .panel-body {
@@ -5822,4 +5832,46 @@ td.visible-print {
 }
 .affix {
     position: fixed
+}
+
+footer img {
+    display: inline-block;
+    max-height: 84px;
+    max-height: 8.4rem;
+    width: auto;
+    margin: 3rem;
+}
+
+footer .small {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+    display: block;
+    padding: 5px 20px;
+    z-index: 1;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    border-right: 1px solid #EF4070;
+    color: #EF4070;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+    font-weight: bold;
+    background-color: transparent;
+    border-right: 1px solid #CD0037;
+    
+}
+
+div[role=main] li {
+    margin: 0 0 5px 0;
 }
