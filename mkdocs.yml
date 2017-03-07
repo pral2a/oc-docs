@@ -1,0 +1,27 @@
+site_name: Organicity Docs
+
+pages:
+  -  home: index.md
+  -  architecture:
+      -  Asset CRUD: AssetCRUD.md
+      -  Asset Data Model: AssetDataModel.md
+  -  services:
+      -  Asset Discovery Service: AssetDiscoveryService.md
+      -  Asset Annotation Service: AssetAnnotationService.md
+      -  Experimenter Portal: ExperimenterPortal.md
+      -  Federated Data Assets: FederatedDataAssets.md
+      -  Urban Data Observatory: UrbanDataObservatory.md
+  -  tutorials:
+      -  How To Access Token: HowToAccessToken.md
+      -  How To Authenticate An User: HowToAuthenticateAnUser.md
+      -  How To Oc Site: HowToOcSite.md
+      -  How To Push An Asset: HowToPushAnAsset.md.md
+      -  How To Push An Asset To The Experimenter Site: HowToPushAnAssetToTheExperimenterSite.md
+      -  How To Push An Asset To The Provider Site: HowToPushAnAssetToTheProviderSite.md
+      -  How To Refresh Token: HowToRefreshToken.md
+      -  How To Update Detele An Asset: HowToUpdateDeteleAnAsset.md
+
+extra_css:
+    - css/extra.css
+
+theme: mkdocs
