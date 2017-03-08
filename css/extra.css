@@ -3399,9 +3399,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-brand {
     float: left;
-    padding: 15px 15px;
+    padding: 2px;
     font-size: 18px;
     line-height: 20px
+}
+.navbar-brand img {
+    width: 85px;
+    position: relative;
+    margin: 0 15px 0 0;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
