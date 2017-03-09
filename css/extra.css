@@ -5826,3 +5826,20 @@ td.visible-print {
 .affix {
     position: fixed
 }
+
+footer img {
+    display: inline-block;
+    max-height: 84px;
+    max-height: 8.4rem;
+    width: auto;
+    margin: 3rem;
+}
+
+footer .small {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
