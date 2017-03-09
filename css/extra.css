@@ -18,6 +18,7 @@ h3,
 h4,
 h5,
 h6,
+strong,
 .h1,
 .h2,
 .h3,
@@ -28,6 +29,12 @@ h6,
     font-weight: 500;
     line-height: 1.1;
     color: #EF4070
+}
+strong
+{
+    font-family: "CooperHewitt-Medium", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #555;
 }
 body {
     font-family: "CooperHewitt-Book", Helvetica, Arial, sans-serif;
@@ -5863,4 +5870,8 @@ footer .small {
     background-color: transparent;
     border-right: 1px solid #CD0037;
     
+}
+
+div[role=main] li {
+    margin: 0 0 5px 0;
 }
